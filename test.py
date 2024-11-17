@@ -1,1 +1,1 @@
-print ("What's up buddy - ")
+print ("What's up buddy - added poll SCM ")
