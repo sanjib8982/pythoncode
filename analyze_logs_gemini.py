@@ -1,8 +1,8 @@
 import os
 import requests
 
-GEMINI_API_KEY = os.getenv("AIzaSyCtrXclWPy1FTf_R5kfmpkCFBuayiRt8G0")
-GEMINI_ENDPOINT = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key={GEMINI_API_KEY}"
+GEMINI_API_KEY = "AIzaSyAWCbDcw_rc7qGHXkGwv9xEiXl3Eh6_aBs"
+GEMINI_ENDPOINT = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-pro-latest:generateContent?key={GEMINI_API_KEY}"
 
 def analyze_jenkins_log(log_file):
     with open(log_file, 'r') as f:
@@ -28,4 +28,3 @@ if __name__ == "__main__":
         print(analyze_jenkins_log(log_path))
     else:
         print(f"Log file {log_path} not found.")
-
